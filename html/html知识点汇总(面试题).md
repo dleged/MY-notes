@@ -37,9 +37,30 @@
 
 > 使用data-的好处
 
-	可以使用data-*自定义一些属性，属性值可以通过脚步取得(dom.dataset.name)，也可以作为选择器
+	可以使用data-[name]自定义一些属性，属性值可以通过脚步取得(dom.dataset.name)，也可以作为选择器
 
 > meta标签
+
+	标签提供关于HTML文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。它可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 web 服务。 —— W3School
+
+	常用的一些meta：
+	<meta name="keywords" content="your tags" />
+	<meta name="description" content="150 words" />
+	<!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边  -->
+	<meta name="viewport" content="width=device-width,
+	 initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+
+	<!-- 启用 WebApp 全屏模式 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<!-- 添加到主屏后的标题 -->
+	<meta name="apple-mobile-web-app-title" content="标题">
+
+	<!-- 禁止访问邮箱 -->
+	<meta content="email=no" name="format-detection" />
+
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 > canvas
 
