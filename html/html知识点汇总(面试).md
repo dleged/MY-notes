@@ -1,4 +1,4 @@
-## html知识点汇总(面试题)
+## html知识点汇总(面试)
 
 
 > HTML5新特性，语义化
@@ -62,16 +62,11 @@
 	<!-- 优先使用 IE 最新版本和 Chrome -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-> canvas
-
-> HTML废弃的标签
-
-> IE6 bug，和一些定位写法
-
 > css js放置位置和原因
-
-> 什么是渐进式渲染
-
-> html模板语言
-
-> meta viewport原理-
+	浏览器渲染过程
+	1、HTML解析出DOM Tree
+	2、CSS解析出Style Rules
+	3、将二者关联生成Render Tree
+	4、Layout 根据Render Tree计算每个节点的信息
+	5、Painting 根据计算好的信息绘制整个页面
+	然而加载css和js文件会阻止渲染树渲染，为了第一时间反馈页面的布局,将css文件放入head中引入，js则放入body内最后引入(可能脚步文件中需要用到css解析后的布局，避免多次发生重绘和回流)
