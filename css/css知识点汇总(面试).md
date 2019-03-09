@@ -12,7 +12,7 @@
 	伪类有: 类选择器:first-child,:last-child,+,~等一些常规css选择器不好选这的元素；
 	伪元素有: before和:after分别在元素内前后添加内容，有:first-letter和:first-line分别为第一个文本和第一行添加特殊样式；
 	锚伪类: active,:hover,:focus,:link为一些激活了这些动作的元素添加样式。
-
+	
 
 > CSS实现隐藏页面的方式
 

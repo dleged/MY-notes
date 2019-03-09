@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "react-mobx": "^0.0.4"
+  }
+}
