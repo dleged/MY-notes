@@ -123,8 +123,10 @@
     ],
     "plugins": [
       "transform-decorators-legacy",
-      "transform-decorators",
       "transform-runtime"
     ]
+  },
+  "devDependencies": {
+    "babel": "^6.23.0"
   }
 }
