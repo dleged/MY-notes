@@ -122,11 +122,12 @@
       "react-app"
     ],
     "plugins": [
-      "transform-decorators-legacy",
-      "transform-runtime"
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      "@babel/plugin-proposal-class-properties"
     ]
   },
+  "license": "MIT",
   "devDependencies": {
-    "babel": "^6.23.0"
+    "@babel/plugin-proposal-decorators": "^7.3.0"
   }
 }

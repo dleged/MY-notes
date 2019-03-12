@@ -4,12 +4,18 @@ import './App.css';
 import {inject,observer} from 'mobx-react';
 
 @inject((stores) => ({
-  a: stores.a,
+  a: console.log(stores.a) && stores.a,
   b: stores.b
 }))
 @observer
 class App extends Component {
+
+  constructor(props){
+    super();
+  }
+
   render() {
+    console.log(this.props);
     return (
         <div className="App">
           <header className="App-header">
